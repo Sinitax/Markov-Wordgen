@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sinitax</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <head>
+        <div id="title-container" class="h1 text-center">
+            <a href="https://github.com/Sinitax/Wordmash">Markov Word Generator</a>
+        </div>
+    </head>
+
+	<main>
+		<div id="container">
+            <div id="gen-field" class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button id="gen-btn" class="btn btn-outline-secondary" type="button">Generate!</button>
+                </div>
+                <input id="gen-out" type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1" readonly>
+                <input id="gen-minlen" type="number" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1" value="8">
+            </div>
+            <div id="error-msg">
+            </div>
+        </div>
+        <div id="info-card" class="container card">
+            <div class="card-body">
+                This word generator uses the statistical relationship between letters in the english language, by randomly choosing letters to follow a given start sequence based on their probabilistic weights.
+            </div>
+        </div>
+	</main>
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/content.js"></script>
+</body>
+</html>
